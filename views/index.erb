@@ -1,0 +1,9 @@
+<h2>Список парекмахиров</h2>
+
+<%@barbers.each do |barber| %>
+
+	<p> <!-- делает в столбик -->
+	<a href="/barber/<%= barber.id %>"><%= barber.name %></a>	
+	</p>	
+
+<%end%>
